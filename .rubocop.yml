@@ -1,0 +1,57 @@
+
+require:
+- rubocop-rails
+- rubocop-rspec
+- rubocop-performance
+
+AllCops:
+  DisplayCopNames: true
+  EnabledByDefault: true
+  Exclude:
+    - 'db/schema.rb'
+
+Bundler/GemComment:
+  Enabled: false
+Bundler/GemVersion:
+  Enabled: false
+
+Layout/ExtraSpacing:
+  AllowBeforeTrailingComments: true
+  ForceEqualSignAlignment: true
+Layout/LineLength:
+  Exclude:
+    - 'config/initializers/devise.rb'
+Layout/MultilineAssignmentLayout:
+  EnforcedStyle: same_line
+
+Lint/ConstantResolution:
+  Enabled: false
+Lint/NumberConversion:
+  Enabled: false
+
+Metrics/BlockLength:
+  Enabled: false
+Metrics/CyclomaticComplexity:
+  Enabled: false
+Metrics/MethodLength:
+  Enabled: false
+Metrics/PerceivedComplexity:
+  Enabled: false
+
+Style/Copyright:
+  Enabled: false
+Style/DisableCopsWithinSourceCodeDirective:
+  Enabled: false
+Style/Documentation:
+  Exclude:
+    - 'db/**/*'
+Style/DocumentationMethod:
+  Enabled: false
+Style/InlineComment:
+  Enabled: false
+Style/MethodCallWithArgsParentheses:
+  Enabled: false
+Style/MissingElse:
+  Enabled: false
+Style/TopLevelMethodDefinition:
+  Enabled: false
