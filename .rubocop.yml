@@ -55,3 +55,6 @@ Style/MissingElse:
   Enabled: false
 Style/TopLevelMethodDefinition:
   Enabled: false
+
+Rails/FilePath:
+  Enabled: false
