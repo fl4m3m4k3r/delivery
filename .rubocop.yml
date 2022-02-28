@@ -60,3 +60,5 @@ Rails/FilePath:
   Enabled: false
 Rails/SchemaComment:
   Enabled: false
+Rails/NotNullColumn:
+  Enabled: false
