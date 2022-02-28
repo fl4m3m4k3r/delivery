@@ -9,10 +9,12 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
 
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
   </head>
 
   <body>
-    <%= yield %>
+    <div style="max-width: 64rem; margin: 0 auto;">
+      <%= yield %>
+    </div>
   </body>
 </html>
