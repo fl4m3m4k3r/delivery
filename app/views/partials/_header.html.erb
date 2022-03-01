@@ -1,0 +1,17 @@
+<header style="height: 70px; background-color: #ccc; border-bottom: 1px solid black;">
+  <div class="h-full flex justify-between items-center" style="max-width: 64rem; margin: 0 auto;">
+    <div>
+      <%= link_to 'Delivery', root_path, class: 'text-4xl text-blue-600 visited:text-purple-600' %>
+    </div>
+
+    <div>
+     <% if user_signed_in? %>
+        <%= link_to current_user.name, edit_user_registration_path, :class => 'text-2xl' %> |
+        <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'text-2xl'  %>
+      <% else %>
+        <%= link_to "Sign up", new_user_registration_path, :class => 'text-2xl'  %> |
+        <%= link_to "Login", new_user_session_path, :class => 'text-2xl'  %>
+      <% end %>  
+    </div>
+  </div>
+</header>
